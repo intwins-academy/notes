@@ -9,19 +9,81 @@ JavaScript is a programming language that is used to create interactive effects 
 
 ## How JavaScript runs in the browser?
 
+JavaScript code is executed by the browser's JavaScript engine. The JavaScript engine is a part of the browser that interprets and executes JavaScript code. When a web page is loaded, the browser reads the HTML, CSS, and JavaScript code and renders the page on the screen. The JavaScript engine then interprets and executes the JavaScript code, which can modify the HTML and CSS to create interactive effects.
+
 ## How to open the console in the browser?
+
+To open the console in the browser, you can use the following keyboard shortcuts:
+
+- **Google Chrome**: Press `Ctrl + Shift + J` on Windows or `Cmd + Option + J` on Mac.
+- **Google Chrome**: Press `Ctrl + Shift + i` on Windows or `Cmd + Option + i` on Mac.
 
 ## How to write JavaScript code in the console?
 
+You can write JavaScript code directly in the console by typing the code and pressing `Enter`. For example, you can type `alert('Hello, World!')` in the console and press `Enter` to display an alert box with the message "Hello, World!". You can also use the console to log messages and debug your code by using the `console.log()` function.
+
 ## How to write script in the HTML file?
+
+You can write JavaScript code in an HTML file by using the `<script>` tag. The `<script>` tag is used to embed JavaScript code in an HTML document. You can place the `<script>` tag in the `<head>` or `<body>` section of the HTML document. For example, you can use the following code to display an alert box with the message "Hello, World!" when the page is loaded:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Example</title>
+    <script>
+      alert("Hello, World!");
+    </script>
+  </head>
+  <body>
+    <h1>Welcome to JavaScript!</h1>
+  </body>
+</html>
+```
 
 ## Some Terminologies
 
 - **Variable**: A variable is a container that holds data. Variables are used to store information that can be used later in the program. Variables can hold different types of data, such as numbers, strings, and objects.
+- **Syntax**: Syntax refers to the rules that govern how code is written in a programming language. Syntax errors occur when code is written incorrectly and does not follow the rules of the language.
+- **Statement**: A statement is a line of code that performs a specific task. Statements are used to create programs and control the flow of code. Statements can be simple, such as assigning a value to a variable, or complex, such as defining a function.
+
+## Basic Data types
+
+### Primitives
+
+- **String**: A string is a sequence of characters enclosed in single or double quotes. Strings are used to store text data.
 - **Function**: A function is a block of code that performs a specific task. Functions are used to organize code and make it easier to read and maintain. Functions can take input, called parameters, and return output, called a return value.
-- **Object**: An object is a collection of key-value pairs. Objects are used to store data in a structured way. Objects can contain properties and methods, which are used to access and manipulate the data stored in the object.
-- **Array**: An array is a collection of elements. Arrays are used to store multiple values in a single variable. Arrays can contain different types of data, such as numbers, strings, and objects.
-- **String**: A string is a sequence of characters. Strings are used to store text data. Strings can contain letters, numbers, and special characters.
 - **Number**: A number is a numeric value. Numbers are used to store numerical data. Numbers can be integers or floating-point values.
 - **Boolean**: A boolean is a logical value that can be either true or false. Booleans are used to store binary data. Booleans are often used in conditional statements to control the flow of a program.
-- **Syntax**: Syntax refers to the rules that govern how code is written in a programming language. Syntax errors occur when code is written incorrectly and does not follow the rules of the language.
+
+### Non-Primitives
+
+- **Object**: An object is a collection of key-value pairs. Objects are used to store data in a structured way. Objects can contain properties and methods, which are used to access and manipulate the data stored in the object
+- **Array**: An array is a collection of elements. Arrays are used to store multiple values in a single variable. Arrays can contain different types of data, such as numbers, strings, and objects.
+
+## Basic Functions
+
+- **alert()**: The alert() function displays a message in a dialog box.
+- **prompt()**: The prompt() function displays a dialog box that prompts the user for input.
+- **confirm()**: The confirm() function displays a dialog box with a message and OK and Cancel buttons.
+
+## Conditional statements
+
+- **if statement**: The if statement is used to execute a block of code if a specified condition is true.
+- **else statement**: The else statement is used to execute a block of code if the specified condition is false.
+- **else if statement**: The else if statement is used to specify a new condition if the first condition is false.
+- **switch statement**: The switch statement is used to select one of many code blocks to be executed.
+
+## Connect with HTML
+
+- **getElementById()**: The getElementById() method returns the element that has the ID attribute with the specified value.
+- **innerHTML**: The innerHTML property sets or returns the HTML content of an element.
+- **addEventListener()**: The addEventListener() method attaches an event handler to the specified element.
+
+- "onclick" event: The onclick event occurs when the user clicks on an element.
+
+**Examples:**
+
+```js
+<button onclick="alert('Button clicked!')">Click Me</button>
+```
